@@ -1,0 +1,1 @@
+kops create cluster --name=dallasdevops.xyz --state=s3://dallasdevopsk8s.xyz --zones=ap-south-1b --node-count=2 --node-size=t2.micro --master-size=t2.small --master-volume-size 10 --node-volume-size 10 --dns-zone=dallasdevops.xyz --ssh-public-key /root/.ssh/id_rsa.pub --yes
