@@ -19,4 +19,4 @@ done
 # Output the results
 echo "Positive Numbers: ${positive_numbers[@]}"
 echo "Negative Numbers: ${negative_numbers[@]}"
-
+echo "Positive Numbers: ${positive_numbers[@]}"
