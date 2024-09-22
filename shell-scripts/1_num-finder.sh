@@ -10,12 +10,17 @@ negative_numbers=()
 # Loop through the numbers and separate them
 for number in "${numbers[@]}"; do
   if [[ $number == -* ]]; then
+    if [[ $number == 0]]; then
+     echo "found ZERO"	    
     negative_numbers+=("$number")
   else
     positive_numbers+=("$number")
+  
+    fi
   fi
 done
 
 # Output the results
 echo "Positive Numbers: ${positive_numbers[@]}"
+echo "Negative Numbers: ${negative_numbers[@]}"
 echo "Negative Numbers: ${negative_numbers[@]}"
